@@ -17,7 +17,7 @@ main{
 .navbar{
     display: flex;
     background-color: #fff;
-    top: 10px;
+    top: 1vh;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -81,6 +81,7 @@ h3{
 .texto{
     text-align:justify;
     color: black;
+    /*font-size: 2em;*/
 }
 
 .bttn{
@@ -187,9 +188,75 @@ body{
     border-color: #d85a1c !important;
 }
 
-/*@media (max-width: 1024px) {
+@media (max-width: 1024px) {
 
-    .gallery{
+    .produto{
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .produto-content{
+        width: 100%;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .texto{
+        font-size: 2em;
+        word-wrap: break-word;
+        white-space:unset;
+    }
+
+    .produto img{
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .hover-container img{
+        width: 10em;
+    }
+
+    .hover-container{
+        justify-self: center;
+    }
+
+    .logonav{
+        max-height: 7vh;
+        padding-top: 1.4vh;
+    }
+    
+    .logofooter{
+        max-height: 7vh;
+    }
+
+    li{
+        font-size: 1.5em;
+    }
+
+    .footer-content h3{
+        font-size: 1.25em;
+    }
+
+    .footer-content p{
+        font-size: 113%;
+    }
+
+    .bttn{
+        width: 50%;
+        height: 10%;
+        font-size: 300%;
+        justify-content: center;
+    }
+
+    .titulo h1{
+        font-size: 2em;
+    }
+
+    /*.gallery{
         padding-right: 0px;
         padding-left: 120px;
     }
@@ -237,7 +304,6 @@ body{
 
     .footer-content h3{
         font-size: 20px;
-
     }
 
     .footer-content p{
@@ -263,7 +329,7 @@ body{
     }
 
     .texto{
-        font-size: 20px;
+        font-size: 2em;
         word-wrap: break-word;
         white-space:unset;
     }
@@ -275,7 +341,7 @@ body{
     }
 
     .hover-container img{
-        width: 200px;
+        width: 10em;
     }
 
     .hover-container{
@@ -294,16 +360,15 @@ body{
     }
 
     .logonav{
-        max-height: 150px;
-        padding-top: 10px;
+        max-height: 10vh;
+        padding-top: 1.4vh;
     }
     
     .logofooter{
-        max-height: 150px;
+        max-height: 10vh;
     }
 
     li{
-        font-size: 25px;
-    }
-    
-}*/
+        font-size: 1.5em;
+    }*/
+}
