@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="indexStyle.css">
     </head>
 
-    <body>
+    <body onload="loadProduct()">
         <nav class="navbar">
             <div><a href="index.html"><img class="logonav" src="./resources/logo-svg.svg"></a></div>
         </nav>
@@ -28,11 +28,11 @@
                         <div class="produto-content">
                             <div class="slides">
                                 <div class="img-container">
-                                    <img src="./resources/de9cc83d6b8af771cb05fc6d23a0e372.jpg" alt="blusa">
+                                    <img id="productimg" src="./resources/blusa.jpg" alt="blusa">
                                 </div>
                                 
                                 <div class="hover-container">
-                                    <img src="./resources/de9cc83d6b8af771cb05fc6d23a0e372.jpg" alt="blusa">
+                                    <img src="./resources/blusa.jpg" alt="blusa">
                                 </div>
                                 <div class="hover-container">
                                     <img src="resources\shirt2.jpg" alt="blusa">
@@ -44,7 +44,7 @@
                         </div>
 
                         <div class="produto-content">
-                            <h2>nome_produto</h2>
+                            <h2 id="productname"></h2>
                             <h2>Preço sob consulta</h2>
                             <div>
                                 <button class="bttn">
@@ -55,13 +55,7 @@
                             </div>
 
                             <h3 class="texto">Descrição</h3>
-                            <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae leo dui. 
-                                Fusce eget magna pellentesque, congue nisl ac, hendrerit mi. Pellentesque posuere
-                                 nisl et consectetur pharetra. Morbi ut turpis vitae orci egestas volutpat et at elit. 
-                                Aliquam et dolor eget lorem bibendum congue condimentum viverra justo. Duis laoreet bibendum 
-                                tempus. Quisque iaculis tellus nec risus volutpat, et convallis dui mattis. Fusce condimentum 
-                                pretium ligula ac vulputate. Maecenas at hendrerit massa. Curabitur odio urna, condimentum ut 
-                                justo non, molestie accumsan mauris.</br></p>
+                            <p class="texto" id="description"></br></p>
                         </div>
                     </div>
                     
@@ -89,6 +83,6 @@
                     <p>&copy; 2024 FW Estamparia . Todos os direitos reservados</p>
                 </div>
             </footer>
-        <!--/div-->
+        <script src="script.js"></script>
     </body>
 </html>
